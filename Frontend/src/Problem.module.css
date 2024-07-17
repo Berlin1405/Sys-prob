@@ -1,0 +1,40 @@
+.prob {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.prob > select {
+    width: 200px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.prob > input {
+   height: 22px;
+   width: 200px;
+   border-radius: 10px;
+   padding-left: 10px;
+}
+   
+.btn {
+    background-color: #ff4b2b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    margin: 5px; 
+}
+.btn_dir{
+    display: flex;
+}
