@@ -4,21 +4,25 @@ var connection = createConnection({
     host: "localhost",
     port: "3306",
     user: "root",
-    password: "THANUSH@",
+    password: "Thanush@14",
     database: "pc_man"
 });
 
 export function validate_user(username, password) {
     return new Promise((resolve, reject) => {
-        var check_user_query = "SELECT * FROM users_details WHERE username = ?";
+        var check_user_query = "SELECT * FROM user_details WHERE username = ?";
         connection.query(check_user_query, [username], (err, result) => {
+            console.log(result,err);
+            
             if (err) {
                 reject("err");
+                
             }
             if (result.length == 0) {
                 resolve("No user");
             }
             var user = result[0];
+            console.log(user);
             if (user.password === password) {
                 resolve("Success");
             } else {

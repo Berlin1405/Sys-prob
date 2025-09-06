@@ -13,7 +13,7 @@ function Add() {
       <div>
         <div className={styles.pc_cont}>
           <Toaster position="top-center" reverseOrder={false} />
-          <label htmlFor="user">UserName:</label>
+          <label htmlFor="user">UserName:</label> 
           <input type="text" placeholder='Username' value={user_name} onChange={(e) => {
             setuser_name(e.target.value)
           }} />
